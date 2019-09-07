@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<table>
+    <tr>
+<th> <input type="number" id="Num1" ></th>
+    <th>   <input type="number" id="Num2"></th>
+    </tr>
+    <tr>
+        <th><button id="ADD" type="button" onclick="Cong()">Addition(+) </button></th>
+        <th><button id="SUB" type="button" onclick="Tru()">Subtraction(-)</button></th>
+        <th><button id="MUL" type="button" onclick="Nhan()">Multication(x)</button></th>
+        <th><button id="DIV" type="button" onclick="Chia()">Division(/)</button></th>
+    </tr>
+</table>
+<script>
+    function Cong() {
+        let num1 = document.getElementById("Num1").value;
+        let num2 = document.getElementById("Num2").value;
+        let Add = parseInt(document.getElementById("Num1").value) + parseInt(document.getElementById("Num2").value);
+        let ketqua = "Result "+Add ;
+
+        document.getElementById("ADD").innerHTML = ketqua;
+    }
+    function Tru() {
+        let num1 = document.getElementById("Num1").value;
+        let num2 = document.getElementById("Num2").value;
+        let Sub = parseInt(document.getElementById("Num1").value) - parseInt(document.getElementById("Num2").value);
+        let ketqua = "Result "+Sub;
+        document.getElementById("SUB").innerHTML = ketqua;
+    }
+    function Nhan() {
+        let num1 = document.getElementById("Num1").value;
+        let num2 = document.getElementById("Num2").value;
+        let mul = parseInt(document.getElementById("Num1").value) * parseInt(document.getElementById("Num2").value);
+        let ketqua= "Result "+mul ;
+
+        document.getElementById("MUL").innerHTML = ketqua;
+    }
+    function Chia() {
+        let num1 = document.getElementById("Num1").value;
+        let num2 = document.getElementById("Num2").value;
+        let div = parseInt(document.getElementById("Num1").value) / parseInt(document.getElementById("Num2").value);
+        let ketqua = "Result "+div ;
+
+        document.getElementById("DIV").innerHTML = ketqua;
+
+    }
+</script>
+</body>
+</html>
